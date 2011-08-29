@@ -1,0 +1,11 @@
+---
+DOWN: 
+  drop_field: 
+    - displays
+      - append_text
+UP: 
+  add_field: 
+    displays: 
+      append_text: 
+        type: string
+        default: false

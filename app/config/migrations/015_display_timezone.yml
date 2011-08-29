@@ -1,0 +1,11 @@
+---
+DOWN: 
+  drop_fied: 
+    - displays
+      - timezone
+UP: 
+  add_field: 
+    displays: 
+      timezone: 
+        type: int
+        default: 0

@@ -1,0 +1,36 @@
+---
+DOWN: 
+  drop_table: 
+    - displays
+UP: 
+  create_table: 
+    displays: 
+      name: 
+        type: string
+        default: false
+        length: 100
+        - not_null
+      text: 
+        type: string
+        default: false
+        length: 1000
+      secret: 
+        type: string
+        default: false
+        length: 100
+        - not_null
+      serial_num: 
+        type: string
+        default: false
+        length: 100
+        - not_null
+      last_ip: 
+        type: string
+        default: false
+        length: 100
+      last_request: 
+        type: datetime
+        default: false
+      last_text_update: 
+        type: datetime
+        default: false

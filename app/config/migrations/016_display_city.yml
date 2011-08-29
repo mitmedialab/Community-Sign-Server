@@ -1,0 +1,10 @@
+---
+DOWN: 
+  drop_fied: 
+    - displays
+      - city
+UP: 
+  add_field: 
+    displays: 
+      city: 
+        type: string

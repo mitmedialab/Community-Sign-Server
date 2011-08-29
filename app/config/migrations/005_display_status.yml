@@ -1,0 +1,11 @@
+---
+DOWN: 
+  drop_fied: 
+    - displays
+      - status
+UP: 
+  add_field: 
+    displays: 
+      status: 
+        type: integer
+        default: 0

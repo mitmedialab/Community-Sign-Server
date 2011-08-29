@@ -1,0 +1,10 @@
+---
+DOWN: 
+  drop_field:
+    - displays
+      - error_alert_emails
+UP: 
+  add_field: 
+    displays: 
+      error_alert_emails: 
+        type: string

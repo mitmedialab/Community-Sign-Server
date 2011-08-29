@@ -1,0 +1,16 @@
+---
+DOWN: 
+  drop_table: 
+    - display_statuses
+UP: 
+  create_table: 
+    display_statuses: 
+      display_id: 
+        type: integer
+        - not_null
+      status: 
+        type: integer
+        default: 0
+      changed: 
+        type: datetime
+        default: false

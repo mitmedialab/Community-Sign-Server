@@ -1,0 +1,22 @@
+---
+DOWN: 
+  drop_table: 
+    - users
+UP: 
+  create_table: 
+    users: 
+      username: 
+        type: string
+        default: false
+        length: 50
+        - not_null
+      password: 
+        type: string
+        default: false
+        length: 50
+        - not_null
+      email: 
+        type: string
+        default: false
+        length: 100
+        - not_null

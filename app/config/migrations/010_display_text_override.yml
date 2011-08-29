@@ -1,0 +1,11 @@
+---
+DOWN: 
+  drop_fied: 
+    - displays
+      - override_text
+UP: 
+  add_field: 
+    displays: 
+      override_text: 
+        type: string
+        default: false

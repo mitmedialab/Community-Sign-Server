@@ -1,0 +1,42 @@
+---
+DOWN: 
+  drop_table: 
+    - stops
+UP: 
+  create_table: 
+    stops: 
+      stop_key: 
+        type: string
+        default: false
+        length: 100
+        - not_null
+      name: 
+        type: string
+        default: false
+        length: 100
+        - not_null
+      agency: 
+        type: string
+        default: false
+        length: 100
+        - not_null
+      route: 
+        type: string
+        default: false
+        length: 100
+        - not_null
+      route_name: 
+        type: string
+        default: false
+        length: 100
+        - not_null
+      direction: 
+        type: string
+        default: false
+        length: 100
+        - not_null
+      direction_name: 
+        type: string
+        default: false
+        length: 100
+        - not_null

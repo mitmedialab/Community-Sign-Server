@@ -1,0 +1,11 @@
+---
+DOWN: 
+  drop_fied: 
+    - displays
+      - version
+UP: 
+  add_field: 
+    displays: 
+      version: 
+        type: string
+        length: 10

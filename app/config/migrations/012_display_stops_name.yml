@@ -1,0 +1,11 @@
+---
+DOWN: 
+  drop_fied: 
+    - display_stops
+      - name
+UP: 
+  add_field: 
+    display_stops: 
+      name: 
+        type: string
+        default: null

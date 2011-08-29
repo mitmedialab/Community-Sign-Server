@@ -1,0 +1,17 @@
+---
+DOWN: 
+  drop_table: 
+    - display_stops
+UP: 
+  create_table: 
+    display_stops: 
+      display_id: 
+        type: integer
+        default: false
+        length: 11
+        - not_null
+      stop_id: 
+        type: integer
+        default: false
+        length: 11
+        - not_null

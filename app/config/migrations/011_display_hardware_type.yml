@@ -1,0 +1,11 @@
+---
+DOWN: 
+  drop_fied: 
+    - displays
+      - hardware_type
+UP: 
+  add_field: 
+    displays: 
+      hardware_type: 
+        type: integer
+        default: 1

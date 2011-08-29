@@ -1,0 +1,23 @@
+---
+DOWN: 
+  drop_table: 
+    - groups
+  drop_fied: 
+    - displays
+      - group_id
+UP: 
+  create_table: 
+    groups: 
+      name: 
+        type: string
+        default: false
+        length: 100
+        - not_null
+      url: 
+        type: string
+        default: false
+        length: 1000
+  add_field: 
+    displays: 
+      group_id: 
+        type: int

@@ -1,0 +1,11 @@
+---
+DOWN: 
+  drop_field: 
+    - displays
+      - restart
+UP: 
+  add_field: 
+    displays: 
+      restart: 
+        type: integer
+        default: 1

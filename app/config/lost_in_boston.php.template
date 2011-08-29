@@ -1,0 +1,23 @@
+<?php 
+
+/**
+ * Are users allowed to sign themselves up?
+ */
+Configure::write('LostInBoston.AllowSelfSignup', true);
+
+/**
+ * After how much time is a sign considered offline?
+ */
+Configure::write('LostInBoston.SignDeadThresholdSecs', 5*60);
+
+/**
+ * What address to alert emails come from?
+ */
+Configure::write('EmailFromAddress', 'LiB Server <lib-server@brownbag.me>');
+
+/**
+ * What is the User-facing name of this server installation
+ */
+Configure::write('ServerName', 'Lost in Boston');
+
+?>

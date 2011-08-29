@@ -1,0 +1,11 @@
+---
+DOWN: 
+  drop_fied: 
+    - users
+      - send_error_alerts
+UP: 
+  add_field: 
+    users: 
+      send_error_alerts: 
+        type: boolean
+        default: true

@@ -1,0 +1,63 @@
+#header h1 {
+	font-size: 250%;
+	background: none;
+	line-height: normal;
+	padding: 5px;
+	margin: 0px;
+}
+
+#nav ul {
+	list-style: none;
+	margin-left: 15px;
+	margin-bottom: 15px;
+}
+#nav ul li {
+	display: inline-block;
+	margin: 0px;
+	padding: 0px 10px;
+}
+#nav a {
+	color: white;
+}
+
+h3 {
+	margin-top: 10px;
+}
+p {
+	margin-top: 5px;
+}
+p.lib_display {
+	background: black;
+	color: red;
+	padding: 10px;
+	font-weight: bold;
+	font-family: sans-serif;
+	margin-bottom: 10px;
+}
+
+div.lib-status-ok {
+    text-transform: uppercase;
+    font-size: small;
+    color: #008800;
+    font-weight: bold;
+    padding: 4px;
+	float: right;
+}
+
+td div.lib-status-ok {
+	float: none;
+}
+
+div.lib-status-bad {
+	background: red;
+	text-transform: uppercase;
+	font-size: small;
+	color: white;
+	font-weight: bold;
+	padding: 4px;
+    float: right;
+}
+
+td div.lib-status-bad {
+    float: none;
+}
