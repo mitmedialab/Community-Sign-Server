@@ -11,7 +11,7 @@ Requirements
 - HTTP Server (preferably Apache with mod_rewrite)
 - PHP v4.3.2 or greater
 - a database engine (MySQL, PostgreSQL, MS Sql Server, Oracle, SqlLite)
-- SVN (to check out the code)
+- git (to check out the code)
 
 *Tip*: An easy way to set up a development computer is to install the 
 [XAMPP program](http://www.apachefriends.org/en/xampp.html).
@@ -19,7 +19,7 @@ Requirements
 Installation
 --------
 
-The code is stored on Github. This document will assume you're installing on Ubuntu, with Apache2 and MySQL.  We'll also assume you're installing to `/var/www/rcss/`.  On windows you could use `C:\rcss\`.
+The code is stored on GitHub. This document will assume you're installing on Ubuntu, with Apache2 and MySQL.  We'll also assume you're installing to `/var/www/rcss/`.  On windows you could use `C:\rcss\`.
 
 **Set Up a Apache and MySql**
 
