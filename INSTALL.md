@@ -64,7 +64,10 @@ TBD
 
 ** Import transit stops **
 
-TBD
+There is a CakePHP shell task that can help you import transit stops from NextBus.  Simply run this command and it will populate the `stops` table with data from NextBus for a specific agency.  **Warning**: this may take a while, but it will give you status as it processes each route.
+```
+./cake/console/cake populate_nextbus_stops
+```
 
 ** Set up con jobs **
 
