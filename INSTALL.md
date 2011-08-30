@@ -58,18 +58,19 @@ You now should be able to hit your url (http://rcss.myserver.org) and see a webs
 Configure Your Installation
 ---------
 
-** Import features **
+**Import features**
 
 TBD
 
-** Import transit stops **
+**Import transit stops**
 
 There is a CakePHP shell task that can help you import transit stops from NextBus.  Simply run this command and it will populate the `stops` table with data from NextBus for a specific agency.  **Warning**: this may take a while, but it will give you status as it processes each route.
+
 ```
 ./cake/console/cake populate_nextbus_stops
 ```
 
-** Set up con jobs **
+**Set up con jobs**
 
 You'll want to set up cron jobs to two things:
 
