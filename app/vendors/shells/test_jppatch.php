@@ -18,15 +18,15 @@ class TestJppatchShell extends Shell {
 
         date_default_timezone_set('America/New_York');
         foreach($events as $info){
-        	$this->out($info['summary'].date("Y-m-d H:i:s",$info['startdate']));
+        	//$this->out($info['summary'].date("Y-m-d H:i:s",$info['startdate']));
             $ongoinStr = ($info['ongoing']) ? "ongoing" : "one-time";
             $dateStr = date("Y-m-d H:i:s",$info['startdate']);
-            $infoStr = " (".$ongoinStr.") from ".$info['src'];
+            //$infoStr = " (".$ongoinStr.") from ".$info['src'];
 			$endDateStr = date("Y-m-d H:i:s",$info['enddate']);
             $this->out($dateStr." : ".$info['summary']);
-            $this->out(" ".$infoStr);
+            //$this->out(" ".$infoStr);
             $this->out("  @ ".$info['location']);
-			$this->out($endDateStr);
+			//$this->out($endDateStr);
 			 
         }
         date_default_timezone_set('America/New_York');

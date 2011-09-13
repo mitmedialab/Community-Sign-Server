@@ -12,7 +12,7 @@ class PatchCalendar extends AbstractCalendar{
     }
     
     protected function getCalendarUrl(){
-        return "http://api.patch.com/publication/jamaicaplain/events:future_chronological";
+        return "http://api.patch.com/publication/jamaicaplain/events:future_chronological?level=mobile_list";
     }
     
     protected function getCacheKeyPrefix(){
@@ -21,6 +21,14 @@ class PatchCalendar extends AbstractCalendar{
 
     protected function getStringReplacements(){
         return array( 
+        	"Jamaica Plain" => "JP",
+        	"Public Library" => "Library",
+        	"Boston City Hall" => "City Hall",
+        	"Branch Library" => "Library",
+        	"Bella Luna Restaurant and Milky Way Lounge" => "Bella Luna / Milk Way",
+        	"First Church In JP Unitarian Universalist" => "First Church",
+        	"MSPCA-Angell Animal Medical Center" => "MSPCA-Angell",
+        	"St John's Episcopal Church" =>"St John's",
         );
     }
     
@@ -68,6 +76,22 @@ class PatchCalendar extends AbstractCalendar{
             			}
 						else{
 							$location = null;
+						}
+						if (property_exists($info,"venue")){
+							if($info->venue!=null){
+								$venueName = $info->venue->name;
+								if($location!=null) {
+									$location = $venueName . " " . $location;
+								} else {
+									$location = $venueName;
+								}
+							}
+						}
+					
+						if($location!=null){
+							 foreach($this->getStringReplacements() as $search=>$replace){
+             				   $location = str_replace($search,$replace,$location);
+            				}
 						}
 					
 						$recurring = false;
